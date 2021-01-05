@@ -21,16 +21,16 @@
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Prabhakar</a>
+                    <a href="#" class="nav__logo">Prabhakar Creation</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="Home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="About" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
 
@@ -44,9 +44,9 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Prabhakar</span><br> Web Developer</h1>
+                    <h1 class="home__title">Hi<br>I'am <span class="home__title-color">Prabhakar</span><br> Full Stack Developer</h1>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="contact" class="button">Contact</a>
                 </div>
 
                 <div class="home__social">
@@ -175,8 +175,7 @@
 
                
             </section>
-            <section>
-                  <div class="container">
+                 <div class="container">
     <h1 class="brand"><span>Prabhakar</span> Web Design</h1>
     <div class="wrapper">
       <div class="company-info">
@@ -216,6 +215,8 @@
     </div>
   </div>
 
+            
+
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
   <script src="main.js"></script>
 </body>
@@ -243,22 +244,23 @@
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
+        
 
         <!--===== MAIN JS =====-->
         <script>
 
 
 
-            /*===== MENU SHOW =====*/ 
+/*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+const toggle = document.getElementById(toggleId),
+nav = document.getElementById(navId)
 
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
-    }
+if(toggle && nav){
+toggle.addEventListener('click', ()=>{
+nav.classList.toggle('show')
+})
+}
 }
 showMenu('nav-toggle','nav-menu')
 
@@ -266,22 +268,22 @@ showMenu('nav-toggle','nav-menu')
 const navLink = document.querySelectorAll('.nav__link');   
 
 function linkAction(){
-  /*Active link*/
-  navLink.forEach(n => n.classList.remove('active'));
-  this.classList.add('active');
-  
-  /*Remove menu mobile*/
-  const navMenu = document.getElementById('nav-menu')
-  navMenu.classList.remove('show')
+/*Active link*/
+navLink.forEach(n => n.classList.remove('active'));
+this.classList.add('active');
+
+/*Remove menu mobile*/
+const navMenu = document.getElementById('nav-menu')
+navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
+origin: 'top',
+distance: '80px',
+duration: 2000,
+reset: true
 });
 
 /*SCROLL HOME*/
@@ -311,12 +313,13 @@ sr.reveal('.contact__input',{interval: 200});
 
 
 
-        </script>
+</script>
 
 
 
 
 
+       
 
 
 

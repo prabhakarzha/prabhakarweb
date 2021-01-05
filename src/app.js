@@ -4,6 +4,7 @@ require("./db/conn");
 const User = require("./models/usermessage");
 const app =express();
 
+
 const port =process.env.PORT ||3000;
 
 //setting path
@@ -19,8 +20,31 @@ app.set("view engine","hbs");
 
 
 app.get("/",(req,res)=>{
+    
     res.render("index");
-})
+});
+
+
+
+app.get("/contact",(req,res)=>{
+    
+    res.render("contact");
+});
+app.get("/About",(req,res)=>{
+    
+    res.render("About");
+});
+app.get("/skills",(req,res)=>{
+    
+    res.render("skills");
+});
+app.get("/Work",(req,res)=>{
+    
+    res.render("Work");
+});
+
+
+
 
 
 app.post("/contact",async(req,res) => {
@@ -33,6 +57,8 @@ app.post("/contact",async(req,res) => {
         res.status(500).send(error);
     }
 })
+
+
 app.listen(port, ()=>{
     console.log(`server is running at port no ${port}`);
 })

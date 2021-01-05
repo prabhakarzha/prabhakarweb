@@ -12,7 +12,7 @@
   --second-color: #0E2431;
 }
 
-/*===== Fuente y tipografia =====*/
+
 :root{
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
@@ -27,7 +27,6 @@
   }
 }
 
-/*===== Margenes =====*/
 :root{
   --mb-1: 0.5rem;
   --mb-2: 1rem;
